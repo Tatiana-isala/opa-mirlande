@@ -14,5 +14,5 @@ spec:
         violation[{"msg": msg}] {
           input.review.object.kind == "Deployment"
           not input.review.object.spec.template.spec.affinity.podAntiAffinity
-          msg := "PodAntiAffinity requise"
+          msg := "PodAntiAffinity est requis pour ce deploiement ,veuiller revoir votre fichier de configuration et ressayer une nouvelle fois"
         }
