@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: safe-pod-good
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    securityContext:
+      privileged: false  # Conforme
+    readinessProbe:
+      httpGet:
+        path: /
+        port: 80

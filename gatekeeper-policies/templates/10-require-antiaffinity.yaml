@@ -1,0 +1,18 @@
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: k8srequireantiaffinity
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sRequireAntiAffinity
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package k8srequireantiaffinity
+        violation[{"msg": msg}] {
+          input.review.object.kind == "Deployment"
+          not input.review.object.spec.template.spec.affinity.podAntiAffinity
+          msg := "PodAntiAffinity requise"
+        }

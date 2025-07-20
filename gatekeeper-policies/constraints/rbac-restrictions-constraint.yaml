@@ -1,0 +1,11 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRBACRestrictions
+metadata:
+  name: rbac-restrictions
+spec:
+  match:
+    kinds:
+      - apiGroups: ["rbac.authorization.k8s.io"]
+        kinds: ["Role", "ClusterRole"]
+  parameters:
+    forbiddenRoles: ["admin", "super-user"]

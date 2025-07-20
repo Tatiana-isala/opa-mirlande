@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hostpid-pod-bad
+spec:
+  hostPID: true  # Violation
+  containers:
+  - name: nginx
+    image: nginx
