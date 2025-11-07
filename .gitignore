@@ -1,9 +1,0 @@
-# Fichiers temporaires/ignorés
-*.zip
-*.swp
-*.bak
-
-# Fichiers sensibles (ne pas versionner)
-*.key
-*.crt
-*.csr
