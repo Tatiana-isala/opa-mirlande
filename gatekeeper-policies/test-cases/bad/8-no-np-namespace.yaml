@@ -1,5 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: no-np-ns-bad
-  # Pas de label network-policy
