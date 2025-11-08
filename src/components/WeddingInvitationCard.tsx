@@ -363,7 +363,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           src="/assets/ring.webp" 
           alt="Wedding Day" 
           loading="lazy" 
-          className="absolute top-[33%] w-[92px] left-[50%] -translate-x-[50%] -translate-y-[50%]" 
+          className="absolute top-[32%] w-[72px] left-[50%] -translate-x-[50%] -translate-y-[50%]" 
         />
         <p className="absolute ocean font-bold  text-2xl top-[29px] pt-[60px] w-[242px] left-[50%] -translate-x-[50%] -translate-y-[50%]">
         {/* Invitation <br></br> */}
