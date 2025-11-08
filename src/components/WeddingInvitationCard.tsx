@@ -337,7 +337,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           src="/assets/h.png" 
           alt="Top Left Flower" 
           loading="lazy" 
-          className="absolute w-[257px]  bottom-[31.7%] z-50 right-[12px] translate-x-[30%] "  
+          className="absolute w-[157px]  bottom-[31.7%] z-50 right-[12px] translate-x-[-80%] "  
         />
         <img 
           src="/assets/top.png" 
