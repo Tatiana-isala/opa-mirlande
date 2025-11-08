@@ -323,7 +323,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
 
   return (
     <div ref={containerRef} className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#f0f8ff' }}>
-      <div className="relative max-w-lg w-full overflow-hidden text-center text-gray-800 bg-pink-50">
+      <div className="relative max-w-lg w-full overflow-hidden text-center text-gray-800 bg-green-50">
 
         {/* Floral Decorations */}
       
@@ -334,38 +334,38 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           className="absolute w-[267px] md:w-[389px] bottom-[200px] left-0" 
         />
         <img 
-          src="/assets/type.png" 
+          src="/assets/h.png" 
           alt="Top Left Flower" 
           loading="lazy" 
-          className="absolute w-[267px] md:w-[389px] top-[500px] left-0" 
+          className="absolute w-[257px]  bottom-[31.7%] z-50 right-[12px] translate-x-[30%] "  
         />
         <img 
           src="/assets/top.png" 
           alt="Top Left Flower" 
           loading="lazy" 
-          className="absolute w-[187px] md:w-[189px] block top-0 left-o ]" 
+          className="absolute w-[217px] md:w-[189px] block top-0 left-o ]" 
         />
         <img 
-          src="/assets/floral.png" 
+          src="/assets/set.png" 
           alt="Top Left Flower" 
           loading="lazy" 
-          className="absolute w-[60px] md:w-[69px] block top-[170px] left-o ]" 
+          className="absolute w-[70px] md:w-[69px] block top-[170px] left-o ]" 
         />
         <img 
-          src="/assets/topright.png" 
-          alt="Top Left Flower" 
+            src="/assets/t.png" 
+          alt="Top right Flower" 
           loading="lazy" 
-          className="absolute w-[157px] md:w-[189px] block top-0 right-[0]" 
+          className="absolute w-[127px] rotate-[270deg] block top-[-27px] right-[20px]" 
         />
       
-        {/* <img 
+        <img 
           ref={floralWedDayRef}
-          src="/wed-day.png" 
+          src="/assets/ring.webp" 
           alt="Wedding Day" 
           loading="lazy" 
-          className="absolute top-[0%] w-[102px] left-[50%] -translate-x-[50%] -translate-y-[50%]" 
-        /> */}
-        <p className="absolute ocean font-bod text-2xl top-[23px] pt-[60px] w-[242px] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+          className="absolute top-[33%] w-[92px] left-[50%] -translate-x-[50%] -translate-y-[50%]" 
+        />
+        <p className="absolute ocean font-bold  text-2xl top-[29px] pt-[60px] w-[242px] left-[50%] -translate-x-[50%] -translate-y-[50%]">
         {/* Invitation <br></br> */}
         Mariage Coutumier  
         </p> 
@@ -374,7 +374,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
    
         <img 
          
-          src="/assets/bottom.png" 
+          src="/assets/t.png" 
           alt="Bottom Right Flower" 
           loading="lazy" 
           className="absolute bottom-0 right-0 w-[133px] " 
@@ -439,19 +439,18 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
         strokeWidth="4"
       />
     </svg>
-    <img src="/assets/e.webp" alt="Decoration" loading="lazy" className="absolute top-[34%] rotate-[44deg] z-50 translate-y-[-10%] right-[50%] translate-x-[50%] w-[275px]" />
+    <img src="/assets/lil.png" alt="Decoration" loading="lazy" className="absolute top-[54%] rotate-[5deg] z-50 translate-y-[-10%] right-[50%] translate-x-[50%] w-[275px]" />
   </div>
 </div>
 
+
+
         {/* Invitation Message */}
         <div  className="mt-[70px] px-4 text-lg text-gray-700">
-          <div  className="mb-5 m flex ocean  mx-auto flex-col w-max font-bold ">
+          <div  className="mb-5 font-semibo m flex ocean  mx-auto flex-col justify-center items-center w-max font-bold ">
             <h3 className="text-3xl  font-semibold text-gray-800">Romain Raha</h3>
-            <span className="text-lg font-bold h-[23px] my-1 grid justify-center text-blue-600">
-              <Heart className="text-green-700 spain inline-block"/>
-              <Heart className="text-green-500 translate-x-[14px] inline-block translate-y-[-23px] rotate-6"/>
-            </span>
-            <h3 className="text-3xl font-semibold text-gray-800">Eugenie Nkulu</h3>
+      <p className='text-2xl  text-gray-800'>&</p>
+            <h3 className="text-3xl  text-gray-800">Eugenie Nkulu</h3>
           </div>
           <p ref={invitationRef} className="mb-4">
 La famille NZANA NAMAWANDA Hermes et BANZA KABILA Jeannine a le reel plaisir de vous convier a rehausser de votre presence aux ceremonies
@@ -460,7 +459,7 @@ aime Ir ROMAIN KARHUBAKA , fils de Papa ROGER KARHUBAKA et de Maman DEODATE
           </p>
         </div>
 
-        <p  className="text-2xl px-4 font-bold ocean text-gray-600">
+        <p  className="text-2xl px-4 font-bold ocan text-gray-600">
           Programme de mariage
         </p>
         <p  className="mt-2 my-4 w-[34%] mx-auto h-[2px] rounded-full an z-50 bg-gray-400 ">
@@ -470,7 +469,7 @@ aime Ir ROMAIN KARHUBAKA , fils de Papa ROGER KARHUBAKA et de Maman DEODATE
         {/* Date and Venue */}
         <div className="text-center space-y-4 px-2">
           <div className="date-item">
-            <p className="text-2xl text-green-800 font-bold ubuntu">Dimanche 23 Novembre 2025</p>
+            <p className="text-2xl text-green-800 font-bold ocea">Dimanche 23 Novembre 2025</p>
             <div className="flex items-center justify-center gap-2">
               {/* <img src="/certificate.png" className='size-7 rotate-2' loading="lazy" /> */}
               <p className="text-gray-600 serif text-xl my-2"> à 13h00'</p>
@@ -489,7 +488,7 @@ aime Ir ROMAIN KARHUBAKA , fils de Papa ROGER KARHUBAKA et de Maman DEODATE
 
           <div className="date-item">
            
-            <p className="text-gray-600 text-xl">LIEU :</p>
+            <p className="text-gray-600 ocan text-xl">LIEU :</p>
             <p className="text-animated-color text-2xl my-2 font-bold">Salle Polyvalente Paroisse Saint ELOI</p>
             <p className="text-gray-500 text-lg">Réf. MAKOMENO/ Lubumbashi</p>
           </div>
