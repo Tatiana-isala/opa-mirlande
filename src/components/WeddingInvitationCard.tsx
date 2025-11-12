@@ -333,12 +333,12 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           loading="lazy" 
           className="absolute w-[267px] md:w-[389px] bottom-[200px] left-0" 
         />
-        <img 
+        {/* <img 
           src="/assets/h.png" 
           alt="Top Left Flower" 
           loading="lazy" 
           className="absolute w-[157px]  bottom-[31.7%] z-50 right-[12px] translate-x-[-80%] "  
-        />
+        /> */}
         <img 
           src="/assets/top.png" 
           alt="Top Left Flower" 
@@ -457,7 +457,7 @@ La famille NZANA NAMAWANDA Hermès et BANZA KABILA Jeannine a le réel plaisir d
         </div>
 
         <p  className="text-2xl px-4 font-bold ocan text-gray-600">
-          Programme de 
+          Programme 
         </p>
         <p  className="mt-2 my-4 w-[34%] mx-auto h-[2px] rounded-full an z-50 bg-gray-400 ">
         
