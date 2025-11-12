@@ -99,7 +99,7 @@ export const metadata: Metadata = {
   description: "Voici votre lien d'invitation à notre mariage",
   openGraph: {
     title: "Invitation",
-    description: "Voici votre lien  d'invitation à notre mariage",
+    description: "Lien d'invitation au mariage coutumier de nos enfants",
     url: "https://moninvitation.vercel.app",
     type: "website",
     images: [

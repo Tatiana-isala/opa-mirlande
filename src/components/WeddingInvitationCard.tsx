@@ -343,7 +343,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           src="/assets/top.png" 
           alt="Top Left Flower" 
           loading="lazy" 
-          className="absolute w-[217px] md:w-[189px] block top-0 left-o ]" 
+          className="absolute w-[197px] md:w-[189px] block top-0 left-o ]" 
         />
         <img 
           src="/assets/set.png" 
@@ -355,7 +355,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
             src="/assets/t.png" 
           alt="Top right Flower" 
           loading="lazy" 
-          className="absolute w-[127px] rotate-[270deg] block top-[-27px] right-[20px]" 
+          className="absolute w-[117px] rotate-[270deg] block top-[-27px] right-[20px]" 
         />
       
         <img 
@@ -453,14 +453,11 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
             <h3 className="text-3xl  text-gray-800">Eugenie Nkulu</h3>
           </div>
           <p ref={invitationRef} className="mb-4">
-La famille NZANA NAMAWANDA Hermes et BANZA KABILA Jeannine a le reel plaisir de vous convier a rehausser de votre presence aux ceremonies
-du (1)mariage coutumier ,(2) de fete d'aurevoir et (3) de remise des cadeaux de leur fulle Dr EUGENIE NKULU Nabuholo qui s'unit a son bien 
-aime Ir ROMAIN KARHUBAKA , fils de Papa ROGER KARHUBAKA et de Maman DEODATE
-          </p>
+La famille NZANA NAMAWANDA Hermès et BANZA KABILA Jeannine a le réel plaisir de vous convier à rehausser de votre présence aux cérémonies du mariage coutumier, de la fête d’au revoir et de la remise des cadeaux de leur fille Dr Eugénie NKULU Nabuholo, qui s’unit à son bien-aimé Ir Romain KARHUBAKA, fils de Papa Roger KARHUBAKA et de Maman Déodate.          </p>
         </div>
 
         <p  className="text-2xl px-4 font-bold ocan text-gray-600">
-          Programme de mariage
+          Programme de 
         </p>
         <p  className="mt-2 my-4 w-[34%] mx-auto h-[2px] rounded-full an z-50 bg-gray-400 ">
         
@@ -475,14 +472,14 @@ aime Ir ROMAIN KARHUBAKA , fils de Papa ROGER KARHUBAKA et de Maman DEODATE
               <p className="text-gray-600 serif text-xl my-2"> à 13h00'</p>
             </div>
             <FaArrowDown size={12} className='block c mx-auto animate-bounce text-blue-400' />
-            <p className="text-gray-600 text-xl">Ceremonies de remise officielle de dot</p>
+            <p className="text-gray-600 text-xl">Cérémonie de remise officielle de dot</p>
 
             <div className="flex items-center justify-center gap-2">
               {/* <img src="/certificate.png" className='size-7 rotate-2' loading="lazy" /> */}
               <p className="text-gray-600 serif text-xl my-2"> à 15h00'</p>
             </div>
             <FaArrowDown size={12} className='block c mx-auto animate-bounce text-blue-400' />
-            <p className="text-gray-600 text-xl">Fete d'aurevoir et remise des cadeaux</p>
+            <p className="text-gray-600 text-xl">Fête d'au revoir et remise des cadeaux</p>
           </div>
 
 
