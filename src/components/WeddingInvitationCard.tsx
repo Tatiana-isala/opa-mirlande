@@ -979,26 +979,26 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           src="/assets/topright.jpeg" 
           alt="Top Right Flower" 
           loading="lazy" 
-          className="absolute w-[167px] md:w-[389px] top-[0px] right-0" 
+          className="absolute w-[167px]  top-[0px] right-0" 
         />
         <img 
           src="/assets/flyg.png" 
           alt="Top Right Flower" 
           loading="lazy" 
-          className="absolute w-[137px] md:w-[389px] top-[10%] right-0" 
+          className="absolute w-[127px] md:w-[389px] top-[7%] right-[-24px]" 
         />
        
         <img 
-          src="/assets/fly1.png" 
+          src="/assets/flyg1.png"
           alt="Top Left Flower" 
           loading="lazy" 
-          className="absolute w-[267px] md:w-[389px] bottom-[200px] left-0" 
+          className="absolute w-[187px] md:w-[389px] bottom-[725px] left-[-54px]" 
         />
         <img 
-          src="/assets/fly.jpeg" 
+          src="/assets/flyg.png" 
           alt="Top Left Flower" 
           loading="lazy" 
-          className="absolute w-[107px]  top-[570px] rotate-[-90deg] left-[8px]" 
+          className="absolute w-[107px]  top-[570px] rotate-[-90deg] left-[2px]" 
         />
         {/* <img 
           src="/assets/b.webp" 
@@ -1049,11 +1049,11 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
               -Singleton-
             </h1>
           )}
-          <h1 className="text-3xl font-bold text-gray-800">
+          <h1 className="text-2xl font-bold text-gray-800">
             {qrData.participants[0].name}
           </h1>
           {qrData.isCouple && qrData.participants[1].name && (
-            <h1 className="text-3xl font-bold text-gray-800">
+            <h1 className="text-2xl font-bold text-gray-800">
               & {qrData.participants[1].name}
             </h1>
           )}
@@ -1063,7 +1063,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
         </div>
 
 <div ref={photoRef} className="my-6 relative">
-  <div className="relative w-[290px] h-[290px] mx-auto">
+  <div className="relative w-[280px] h-[280px] mx-auto">
     <svg
       viewBox="0 0 260 260"
       className="absolute top-0 left-0 w-full h-full z-10"
@@ -1074,7 +1074,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
         </clipPath>
       </defs>
       <image
-        href="/couple.jpg"
+        href="/couple.png"
         width="260"
         height="260"
         clipPath="url(#circleClip)"
@@ -1101,98 +1101,69 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
 
         {/* Invitation Message */}
         <div  className="mt-[50px] px-4 text-lg text-gray-700">
-          <div  className="mb-5 flex ocea  mx-auto flex-col w-max font-bold ">
-            <h3 className="text-3xl font-semibold text-gray-800">Romain Raha</h3>
-            <span className="text-lg font-bold h-[23px] my-1 grid justify-center text-blue-600">
+          <div  className="mb-5 fl ocea  mx-auto flex gap- flex-col w-max font-bold ">
+            <h3 className="text-3xl font-semibold text-gray-800">Séraphin</h3>
+            {/* <span className="text-lg font-bold h-[23px] my-1 grid justify-center text-blue-600">
               <Heart className="text-orange-700 spain inline-block"/>
               <Heart className="text-orange-500 translate-x-[14px] inline-block translate-y-[-23px] rotate-6"/>
-            </span>
-            <h3 className="text-3xl font-semibold text-gray-800">Eugenie Nkulu</h3>
+            </span> */}
+            <h3 className='ocean'> And</h3>
+            <h3 className="text-3xl font-semibold text-gray-800">Juliana</h3>
           </div>
           <p ref={invitationRef} className="mb-4">
 
-            Les familles KARHUBAKA Roger et NZANA Hermes ont la joie de vous inviter à la célébration de l'union de leurs enfants.
+            Les familles Séverin MURHULA et Faustin BINGO ont joie de vous inviter à la célébration de l'union de leurs enfants.
           </p>
         </div>
-
+{/* 
         <p  className="my- px-4 font-bold text-gray-600">
           PROGRAMME DE MARIAGE
         </p>
         <p  className="mt-2 my-4 w-[34%] mx-auto h-1 rounded-full an z-50 bg-gray-800 ">
         
-        </p>
+        </p> */}
+<p className='ocean font-bold text-2xl mb-2'>Programme</p>
+<div className='ocen text-3xl font-bold text-blue-950'>
+  Samedi 31 Decembre 2025 
+</div>
 
         {/* Date and Venue */}
         <div className="text-center space-y-4 px-2">
           <div className="date-item">
-            <p className="text-xl text-green-800 font-bold ubuntu">Vendredi 28 Novembre 2025</p>
             <div className="flex items-center justify-center gap-2">
               <img src="/certificate.png" className='size-7 rotate-2' loading="lazy" />
-              <p className="text-gray-600 serif text-xl my-2"> à 10h00</p>
+              <p className="text-gray-600 serif text-2xl my-2"> A 90h00</p>
             </div>
             <FaArrowDown size={12} className='block c mx-auto animate-bounce text-blue-400' />
             <p className="text-gray-600 text-xl">Mariage Civil</p>
-            <p className="text-gray-600 text-lg">Commune Annexe</p>
+            <p className="text-gray-600 text-lg">A la Commune LUBUMBASHI</p>
           </div>
 
           <div className="date-item">
-            <p className="text-xl text-green-800 font-bold ubuntu">Samedi 29 Novembre 2025</p>
             <div className="flex items-center justify-center gap-2">
               <img src="/rings.png" className='size-7 rotate-2' loading="lazy" />
-              <p className="text-gray-600 serif text-xl my-2"> à 12h00</p>
+              <p className="text-gray-600 serif text-2xl my-2"> A 13h00</p>
             </div>
             <FaArrowDown size={12} className='block c mx-auto animate-bounce text-blue-400' />
             <p className="text-gray-600 text-xl">Mariage Religieux</p>
-            <p className="text-gray-600 text-lg">Église 8e CEPAC PENUEL</p>
-            <p className="text-gray-500 text-lg">Réf. Arrêt Texaco Boulevard M'siri</p>
+            <p className="text-gray-600 text-lg">Église la Maison du repos - Communauté Church of God World Mission</p>
+            <p className="text-red-500 text-lg">Réf. (A preciser)</p>
           </div>
 
           <div className="date-item">
             <div className="flex items-center justify-center gap-2">
               <img src="/glass.png" className='size-7 rotate-2' loading="lazy" />
-              <p className="text-gray-600 serif text-xl my-2"> à 18h00 </p>
+              <p className="text-gray-600 serif text-2xl my-2"> A 18h00 </p>
             </div>
             <FaArrowDown size={12} className='block c mx-auto animate-bounce text-blue-400' />
             <p className="text-gray-600 text-xl">Réception</p>
-            <p className="text-animated-color text-2xl my-2 font-bold">Salle EL'SHADAI</p>
-            <p className="text-gray-500 text-lg">Réf. Arrêt Craa, prolongement de l'entrepôt de Auto Lubumbashi à quelque mètre de Jangwa</p>
+            <p className="text-animated-color text-3xl px-5 my-2 font-bold">Salle Polyvalente AURORE ECCE</p>
+            <p className="text-gray-500 text-lg">Réf. Avenue KAMALONDO (croisement des avenues du 30 Juin et de la Revolutition)</p>
           </div>
         </div>
- <div ref={securityRef} className="mt-3  text-center p-2">
-          <div className="border-2 border-red-300 flex items-center bg-red-50 p-4 rounded-2xl shadow-sm  gap-4">
-            <div className="text-red-500 block mt-1">
-              <FiAlertTriangle size={24} />
-            </div>
-            <div>
-              <p className="text-red-700 text-sm font-bold mb-2">
-                INFORMATION IMPORTANTE:
-              </p>
-              <p className="text-red-700 text-sm mb-2">
-                Pour des raisons de sécurité, l'arrivée des invités commence à 18h00. Veuillez vous présenter à la salle à cette heure.
-              </p>
-              {/* <p className="text-red-700 text-sm">
-                Présentez votre code QR à l'entrée. En cas de souci, une assistance sera disponible.
-              </p> */}
-            </div>
-          </div> 
-        </div>
-        {/* Contacts */}
-        <div className="mt-6 text-center px-2">
-          <p className="text-xl text-green-800 font-bold mb-2">Contacts</p>
-          <div className="space-y-1">
-            {/* <p className="text-gray-600 text-lg">+243976022715</p> */}
-            <p className="text-gray-600 text-lg">+243995711894</p>
-            <p className="text-gray-600 text-lg">+243999008101</p>
-          </div>
-        </div>
-
-        {/* Information de sécurité */}
-       
-
-     
-
-        {/* Signature */}
-                  <p className="text-gray-600 my-5 text-lg">
+   <div className='w-[100%] h-[2px] mt-3 bg-gray-200'></div>
+   <h2 className='my-3 text-2xl ocean '>Entree Rapide</h2>
+            <p className="text-gray-600 my- text-lg">
                     
                 Un code QR s'affichera ci-dessous 24 heures avant le jour du mariage . Vous allez le présenter à l'entrée de la salle de réception.
                     
@@ -1210,17 +1181,26 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
               fgColor="#000"
             />
           </div>
-   <div className="mt-8 text-center">
+      
+        <div className="mt-2 text-center px-2">
+          <p className="text-xl text-green-800 font-bold mb-2">Contacts</p>
+          <div className="space-y-1">
+            {/* <p className="text-gray-600 text-lg">+243976022715</p> */}
+            <p className="text-gray-600 text-lg">+243995711894</p>
+            <p className="text-gray-600 text-lg">+243999008101</p>
+          </div>
+   <div className="mt-2 pb-[23px] text-center">
           <p className="text-gray-800 text-lg">Avec toute notre joie,</p>
           <p className="mt-2 text-gray-700 text-xl">La famille</p>
         </div>
-          {/* Message pour le QR Code */}
-          {/* <div className="mt-3 px-4 text-center">
-            <p className="text-sm font-bold text-green-700 mb-1">
-              PRÉSENTEZ CE CODE QR À L'ENTRÉE
-            </p>
-          </div> */}
         </div>
+        </div>
+
+        {/* Contacts */}
+
+    
+        {/* Signature */}
+              
       </div>
     </div>
   )
