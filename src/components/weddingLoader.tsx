@@ -9,7 +9,7 @@ export default function WeddingLoader() {
     <div className="relative w-full h-screen bg-stone-50 flex flex-col items-center justify-center text-center overflow-hidden">
       {/* Fleur en coin bas-gauche */}
       <Image
-        src="/assets/fl.png"
+        src="/assets/loading.webp"
         alt="fleur eucalyptus"
         width={348}
         height={340}
@@ -19,9 +19,9 @@ export default function WeddingLoader() {
       {/* Fleur en coin haut-droit (mirroir) */}
      
      
-<div className="absolute top-[23%] left-1/2 -translate-x-1/2 -translate-y-1/2 ">
-
-      <Loader2 className="animate-spin  text-green-700 w-6 h-6" />
+<div className="absolute text-blue-950 top-[23%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4">
+Veuillez Patienter
+      <Loader2 className="animate-spin  text-blue-700 w-6 h-6" />
 </div>
     </div>
   );

@@ -24,8 +24,8 @@ export default function WeddingLoader() {
     <div className="relative w-full h-screen bg-stone-50 flex flex-col items-center justify-center text-center overflow-hidden">
       {/* Fleur en coin bas-gauche */}
       <Image
-        src="/assets/fl.png"
-        alt="fleur eucalyptus"
+        src="/assets/set.jpeg"
+        alt="Chargement"
         width={348}
         height={340}
         className="absolute  rotate-[33deg] top-[62%] left-[48%] translate-x-[-50%] translate-y-[-50%] pointer-events-none"
