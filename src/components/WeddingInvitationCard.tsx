@@ -1152,7 +1152,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
             <FaArrowDown size={12} className='block c mx-auto animate-bounce text-blue-400' />
             <p className="text-gray-600 text-xl">Mariage Religieux</p>
             <p className="text-gray-600 text-lg">Église la Maison du repos </p>
-            <p className="">Avenue Mwandingusha, Q. Salama (Réf. Boulevard Katuba, Arrêt Tshisenda voir École Saint André) </p>
+            <p className="text-gray-500 text-lg">Avenue Mwandingusha, Q. Salama (Réf. Boulevard Katuba, Arrêt Tshisenda voir École Saint André) </p>
           </div>
 
           <div className="date-item">
