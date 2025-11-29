@@ -993,7 +993,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           src="/assets/fly3.png"
           alt="butterfly 3" 
           loading="lazy" 
-          className="absolute w-[97px]  top-[1215px] left-[-14px]" 
+          className="absolute w-[87px]  top-[1225px] left-[-14px]" 
         />
         <img 
           src="/assets/flya.png" 
