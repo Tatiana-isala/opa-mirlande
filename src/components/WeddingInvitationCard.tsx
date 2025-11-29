@@ -993,7 +993,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           src="/assets/fly3.png"
           alt="butterfly 3" 
           loading="lazy" 
-          className="absolute w-[117px]  top-[1185px] left-[-14px]" 
+          className="absolute w-[97px]  top-[1215px] left-[-14px]" 
         />
         <img 
           src="/assets/flya.png" 
@@ -1152,7 +1152,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
             <FaArrowDown size={12} className='block c mx-auto animate-bounce text-blue-400' />
             <p className="text-gray-600 text-xl">Mariage Religieux</p>
             <p className="text-gray-600 text-lg">Église la Maison du repos </p>
-            <p className="text-red-500 text-lg">Avenue Mwandingusha, Q. Salama (Réf. Boulevard Katuba, Arrêt Tshisenda voir École Saint André) </p>
+            <p className="">Avenue Mwandingusha, Q. Salama (Réf. Boulevard Katuba, Arrêt Tshisenda voir École Saint André) </p>
           </div>
 
           <div className="date-item">
