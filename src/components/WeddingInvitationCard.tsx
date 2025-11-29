@@ -980,7 +980,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           src="/assets/topright.png" 
           alt="Top Right Flower" 
           loading="lazy" 
-          className="absolute w-[157px]  top-[0px] right-0" 
+          className="absolute w-[147px]  top-[0px] right-0" 
         />
         <img 
           src="/assets/flyb.png" 
@@ -993,7 +993,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           src="/assets/fly3.png"
           alt="butterfly 3" 
           loading="lazy" 
-          className="absolute w-[87px]  top-[1225px] left-[-14px]" 
+          className="absolute w-[87px]  top-[1238px] left-[-14px]" 
         />
         <img 
           src="/assets/flya.png" 
