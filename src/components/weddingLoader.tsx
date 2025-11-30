@@ -8,20 +8,25 @@ export default function WeddingLoader() {
   return (
     <div className="relative w-full h-screen bg-stone-50 flex flex-col items-center justify-center text-center overflow-hidden">
       {/* Fleur en coin bas-gauche */}
-      <Image
-        src="/assets/loading.webp"
+      <img
+        src="/assets/flower.webp"
         alt="fleur eucalyptus"
-        width={348}
-        height={340}
-        className="absolute   top-[48%] left-[50%] translate-x-[-50%] translate-y-[-50%] pointer-events-none"
+        
+        className="absolute w-[230px]   top-[51%] left-[50%] translate-x-[-50%] translate-y-[-50%] pointer-events-none"
       />
 
       {/* Fleur en coin haut-droit (mirroir) */}
      
      
-<div className="absolute text-blue-950 top-[23%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4">
-Veuillez Patienter
-      <Loader2 className="animate-spin  text-blue-700 w-6 h-6" />
+<div className="absolute text-xl  ocean text-blue-950 top-[23%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4">
+Invitation
+     
+      <Loader2 className="animate-spin s  text-blue-900 w-6 h-6" />
+<p className="serifo flex flex- items-center gap-2">
+  <span>Séraphin </span>
+  <span className="ocean">And</span>
+   <span>Juliana</span>
+</p>
 </div>
     </div>
   );

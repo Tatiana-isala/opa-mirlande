@@ -874,8 +874,8 @@ interface GeneratedLink {
 }
 
 // Configuration Supabase
-const supabaseUrl = 'https://cnpjktbvoikxthvrczje.supabase.co'
-const supabaseAnonKey ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNucGprdGJ2b2lreHRodnJjemplIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQzODY1NjIsImV4cCI6MjA2OTk2MjU2Mn0.Nxz4tPc1-eoBP594xlam_WWmJ2UnrSOPYdVbXVxVJsw'
+const supabaseUrl = 'https://htotfyduudyoephuixzu.supabase.co'
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0b3RmeWR1dWR5b2VwaHVpeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk3NjQ4MzEsImV4cCI6MjA2NTM0MDgzMX0.YbdxwuXTiWwPNdQE_HERJp5hnz4P0hyS19M37CYwvXs'
 
 const supabase = createClient(supabaseUrl, supabaseAnonKey)
 const ITEMS_PER_PAGE = 10
@@ -1472,7 +1472,7 @@ export default function AdminLinkGenerator() {
                   ) : (
                     <>
                       <FiZap size={18} />
-                      Generer Lien Rapide
+                      Generer Lien 
                     </>
                   )}
                 </button>
@@ -1480,15 +1480,7 @@ export default function AdminLinkGenerator() {
             </div>
 
             {/* Info pour les liens rapides */}
-            <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg">
-              <div className="flex items-center gap-2 text-sm text-green-700">
-                <FiZap className="text-green-600" />
-                <span>
-                  <strong>Lien Rapide:</strong> Les données sont pré-remplies (code: {DEFAULT_SECRET_CODE}, téléphone: {DEFAULT_PHONE_NUMBER}). 
-                  Le formulaire s'affiche avec les champs pré-remplis pour confirmation.
-                </span>
-              </div>
-            </div>
+          
           </div>
 
           {/* Generated Links Table */}
@@ -1551,13 +1543,12 @@ export default function AdminLinkGenerator() {
                         {paginatedLinks.map((link) => (
                           <tr key={link.id} className="hover:bg-gray-50">
                             <td className="px-6 py-4">
-                              <div className="font-medium text-gray-800">{link.name}</div>
-                              <div className="text-xs text-gray-500 mt-1">
+                              <div className="font-medium text-gray-800 min-w-[100px]">{link.name}</div>
+                              {/* <div className="text-xs text-gray-500 mt-1">
                                 <span className="inline-flex items-center gap-1 bg-green-100 text-green-700 px-2 py-1 rounded-full">
                                   <FiZap size={12} /> Pré-rempli
                                 </span>
-                                <span className="ml-2 text-gray-400">ID: {link.id}</span>
-                              </div>
+                              </div> */}
                             </td>
                             <td className="px-6 py-4">
                               {link.isCouple ? (
@@ -1570,22 +1561,18 @@ export default function AdminLinkGenerator() {
                                 </span>
                               )}
                             </td>
-                            <td className="px-6 py-4">
-                              {link.isRegistered ? (
-                                <span className="px-2 py-1 inline-flex items-center text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
-                                  <FiCheck className="mr-1" /> Ok
-                                </span>
-                              ) : (
-                                <span className="px-2 py-1 inline-flex items-center text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-700">
-                                  NotOk
-                                </span>
-                              )}
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                              {formatDate(link.createdAt)}
-                            </td>
+                          
+                           
                             <td className="px-6 py-4 whitespace-nowrap">
                               <div className="flex items-center gap-2">
+                                <button
+                                  onClick={() => shareLink(link.url, link.name)}
+                                  className="text-gray-600 hover:text-purple-600 p-2 rounded-full hover:bg-purple-50"
+                                  title="Share link"
+                                  disabled={isLoading}
+                                >
+                                  <FiShare2 size={18} />
+                                </button>
                                 <button
                                   onClick={() => openLink(link.url)}
                                   className="text-gray-600 hover:text-blue-600 p-2 rounded-full hover:bg-blue-50"
@@ -1602,14 +1589,7 @@ export default function AdminLinkGenerator() {
                                 >
                                   <FiCopy size={18} />
                                 </button>
-                                <button
-                                  onClick={() => shareLink(link.url, link.name)}
-                                  className="text-gray-600 hover:text-purple-600 p-2 rounded-full hover:bg-purple-50"
-                                  title="Share link"
-                                  disabled={isLoading}
-                                >
-                                  <FiShare2 size={18} />
-                                </button>
+                                
                                 <button
                                   onClick={() => deleteLink(link.id)}
                                   className="text-gray-600 ml-6 hover:text-red-600 p-2 rounded-full hover:bg-red-50"
@@ -1619,6 +1599,20 @@ export default function AdminLinkGenerator() {
                                   <FiTrash2 size={18} />
                                 </button>
                               </div>
+                            </td>
+                              <td className="px-6 py-4">
+                              {link.isRegistered ? (
+                                <span className="px-2 py-1 inline-flex items-center text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
+                                  <FiCheck className="mr-1" /> Ok
+                                </span>
+                              ) : (
+                                <span className="px-2 py-1 inline-flex items-center text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-700">
+                                  NotOk
+                                </span>
+                              )}
+                            </td>
+                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                              {formatDate(link.createdAt)}
                             </td>
                           </tr>
                         ))}

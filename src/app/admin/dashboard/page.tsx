@@ -16,8 +16,8 @@ import {
 import { createClient } from '@supabase/supabase-js'
 
 // Configuration Supabase
-const supabaseUrl = 'https://cnpjktbvoikxthvrczje.supabase.co'
-const supabaseAnonKey ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNucGprdGJ2b2lreHRodnJjemplIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQzODY1NjIsImV4cCI6MjA2OTk2MjU2Mn0.Nxz4tPc1-eoBP594xlam_WWmJ2UnrSOPYdVbXVxVJsw'
+const supabaseUrl = 'https://htotfyduudyoephuixzu.supabase.co'
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0b3RmeWR1dWR5b2VwaHVpeHp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk3NjQ4MzEsImV4cCI6MjA2NTM0MDgzMX0.YbdxwuXTiWwPNdQE_HERJp5hnz4P0hyS19M37CYwvXs'
 const supabase = createClient(supabaseUrl, supabaseAnonKey)
 interface Participant {
   name: string

@@ -971,32 +971,32 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
 
         {/* Floral Decorations */}
         <img 
-          src="/assets/topleft.png" 
+          src="/assets/topleft.webp" 
           alt="Top Left Flower" 
           loading="lazy" 
           className="absolute w-[159px] rotate-[270deg]  top-[0px] left-[-7px]" 
         />
         <img 
-          src="/assets/topright.png" 
+          src="/assets/topright.webp" 
           alt="Top Right Flower" 
           loading="lazy" 
           className="absolute w-[147px]  top-[0px] right-0" 
         />
         <img 
-          src="/assets/flyb.png" 
+          src="/assets/flyb.webp" 
           alt="butterfly 2" 
           loading="lazy" 
           className="absolute w-[127px] md top-[7%] right-[-24px]" 
         />
        
         <img 
-          src="/assets/fly3.png"
+          src="/assets/fly3.webp"
           alt="butterfly 3" 
           loading="lazy" 
           className="absolute w-[87px]  top-[1238px] left-[-14px]" 
         />
         <img 
-          src="/assets/flya.png" 
+          src="/assets/flya.webp" 
           alt="Top Left Flower" 
           loading="lazy" 
           className="absolute w-[107px]  top-[570px] rotate-[-90deg] left-[2px]" 
@@ -1024,21 +1024,21 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
      
         <img 
         
-          src="/assets/bottomleft.png" 
+          src="/assets/bottomleft.webp" 
           alt="Bottom Right Flower" 
           loading="lazy" 
           className="absolute bottom-[-10px] left-0  w-[213px]" 
         />
         <img 
          
-          src="/assets/bottom2.png" 
+          src="/assets/bottom2.webp" 
           alt="Bottom Right Flower" 
           loading="lazy" 
           className="absolute bottom-[-34px] rotate-[90deg] right-0 w-[153px] " 
         />
         <img 
          
-          src="/assets/flya.png" 
+          src="/assets/flya.webp" 
           alt="Bottom Right Flower" 
           loading="lazy" 
           className="absolute bottom-[290px] right-0 w-[113px] " 
@@ -1082,7 +1082,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
         </clipPath>
       </defs>
       <image
-        href="/couple.png"
+        href="/couple.webp"
         width="260"
         height="260"
         clipPath="url(#circleClip)"
@@ -1103,7 +1103,8 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
         strokeWidth="3"
       />
     </svg>
-    <img src="/assets/center.png" alt="Decoration" loading="lazy" className="absolute top-[48%] rotate-[-43deg]  z-50 translate-y-[-10%] right-[50%] translate-x-[50%] w-[235px]" />
+    {/* <img src="/assets/center2.png" alt="Decoration" loading="lazy" className="absolute top-[73%]   z-50 translate-y-[-10%] right-[50%] translate-x-[50%] w-[235px]" /> */}
+    <img src="/assets/center.webp" alt="Decoration" loading="lazy" className="absolute top-[48%] rotate-[-43deg]  z-50 translate-y-[-10%] right-[50%] translate-x-[50%] w-[235px]" />
   </div>
 </div> 
 
@@ -1169,7 +1170,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
    <div className='w-[100%] h-[2px] mt-3 bg-gray-200'></div>
      <img 
          
-          src="/assets/flower.png" 
+          src="/assets/flower.webp" 
           alt="Bottom Right Flower" 
           loading="lazy" 
           className="0 right-0 w-[103px] mx-auto " 
@@ -1198,8 +1199,8 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           <p className="text-xl text-green-800 font-bold mb-2">Contacts</p>
           <div className="space-y-1">
             {/* <p className="text-gray-600 text-lg">+243976022715</p> */}
-            <p className="text-gray-600 text-lg">+243995711894</p>
-            <p className="text-gray-600 text-lg">+243999008101</p>
+            <p className="text-gray-600 text-lg">+243975410100</p>
+            <p className="text-gray-600 text-lg">+243824746717</p>
           </div>
    <div className="mt-2 pb-[23px] text-center">
           <p className="text-gray-800 text-lg ocean">Avec toute notre joie,</p>
