@@ -1167,10 +1167,10 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
         {/* Invitation Message */}
         <div  className="mt-[50px] px-4 text-lg text-gray-700">
           <div  className="mb-5 fl ocea  mx-auto flex gap- flex-col w-max font-bold ">
-            <h3 className="text-3xl font-semibold text-gray-800">Séraphin</h3>
+            <h3 className="text-3xl font-semibold text-gray-800">Séraphin IRENGE</h3>
          
             <h3 className='ocean text-blue-950'> And</h3>
-            <h3 className="text-3xl font-semibold text-gray-800">Juliana</h3>
+            <h3 className="text-3xl font-semibold text-gray-800">Juliana BINGO</h3>
           </div>
           <p ref={invitationRef} className="mb-4">
 
