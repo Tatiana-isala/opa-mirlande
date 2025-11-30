@@ -1070,7 +1070,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           </p>
         </div>
 
-<div ref={photoRef} className="my-6 relative">
+{/* <div ref={photoRef} className="my-6 relative">
   <div className="relative w-[280px] h-[280px] mx-auto">
     <svg
       viewBox="0 0 260 260"
@@ -1103,13 +1103,69 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
         strokeWidth="3"
       />
     </svg>
-    {/* <img src="/assets/center2.png" alt="Decoration" loading="lazy" className="absolute top-[73%]   z-50 translate-y-[-10%] right-[50%] translate-x-[50%] w-[235px]" /> */}
     <img src="/assets/center.webp" alt="Decoration" loading="lazy" className="absolute top-[48%] rotate-[-43deg]  z-50 translate-y-[-10%] right-[50%] translate-x-[50%] w-[235px]" />
   </div>
-</div> 
+</div>  */}
+{/* <div className="my-4 relative " ref={photoRef}>
+          <div className="inline-block overflow-hidden">
+            <div className="relative size-[280px] mx-auto">
+              <div
+                className="w-full h-full bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('/couple.webp')",
+                  clipPath: "polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%)"
+                }}
+              />
+             
+            </div>
+          </div>
+          <img src="/assets/center.webp" alt="Bottom Right Flower" className="absolute rotate-[-45deg] top-[56%] translate-y-[-10%] right-[50%] translate-x-[50%] w-[170px]" />
+        </div> */}
+        
+<div className="my-4 relative" ref={photoRef}>
+  <div className="inline-block relative">
+    <div className="relative size-[280px] mx-auto">
+
+      {/* CONTOUR HEXAGONAL */}
+      <svg
+        className="absolute inset-0"
+        viewBox="0 0 100 100"
+        style={{
+          transform: "scale(1.07)", // offset du contour
+          zIndex: 1,
+        }}
+      >
+        <polygon
+          points="50 2, 93 25, 93 75, 50 98, 7 75, 7 25"
+          fill="none"
+          stroke="#d87b37"        // orange doux brûlé
+          strokeWidth="1.5"         // épaisseur du contour
+          strokeLinejoin="round"
+        />
+      </svg>
+
+      {/* IMAGE HEXAGON */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/couple.webp')",
+          clipPath:
+            "polygon(50% 2%, 93% 25%, 93% 75%, 50% 98%, 7% 75%, 7% 25%)",
+          zIndex: 2,
+        }}
+      />
+    </div>
+  </div>
+
+  <img
+    src="/assets/center.webp"
+    alt="Bottom Right Flower"
+    className="absolute rotate-[-45deg] z-50 top-[56%] translate-y-[-10%] right-[50%] translate-x-[50%] w-[170px]"
+  />
+</div>
 
         {/* Invitation Message */}
-        <div  className="mt-[75px] px-4 text-lg text-gray-700">
+        <div  className="mt-[50px] px-4 text-lg text-gray-700">
           <div  className="mb-5 fl ocea  mx-auto flex gap- flex-col w-max font-bold ">
             <h3 className="text-3xl font-semibold text-gray-800">Séraphin</h3>
          
