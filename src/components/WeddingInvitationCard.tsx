@@ -1186,7 +1186,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
         </p> */}
 <p className='ocean font-bold text-2xl mb-2 text-orange-800'>Programme</p>
 <div className='ocen text-3xl font-bold text-blue-950'>
-  Samedi 31 Décembre 2025 
+  Mercredi 31 Décembre 2025 
 </div>
 
         {/* Date and Venue */}
