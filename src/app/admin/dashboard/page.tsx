@@ -36,13 +36,20 @@ interface QRData {
 }
 
 // Liste des tables
+// const TABLE_NAMES = [
+//   "Table-1", "Table-2", "Table-3", "Table-4", "Table-5",
+//   "Table-6", "Table-7", "Table-8", "Table-9", "Table-10",
+//   "Table-11", "Table-12", "Table-13", "Table-14", "Table-15",
+//   "Table-16", "Table-17", "Table-18", "Table-19", "Table-20",
+//   "Table-21", "Table-22", "Table-23", "Table-24", "Table-25",
+//   "Table-Enfant"  // Optionnel : Si vous voulez exactement 25 tables, retirez cette ligne.
+// ]
 const TABLE_NAMES = [
-  "Table-1", "Table-2", "Table-3", "Table-4", "Table-5",
-  "Table-6", "Table-7", "Table-8", "Table-9", "Table-10",
-  "Table-11", "Table-12", "Table-13", "Table-14", "Table-15",
-  "Table-16", "Table-17", "Table-18", "Table-19", "Table-20",
-  "Table-21", "Table-22", "Table-23", "Table-24", "Table-25",
-  "Table-Enfant"  // Optionnel : Si vous voulez exactement 25 tables, retirez cette ligne.
+  "ALBIZIA", "BOSCIA", "ANISOPHYLLEA", "TERMINALIA", "SYZYGIUM",
+  "UAPACA", "BALANITES", "BRACHYSTEGIA", "DANIELIA", "CASSIA",
+  "COMBRETUM", "DIPLORHYNCHUS", "HAPLOCOELUM", "ISOBERLINIA", "JULBERNARDIA",
+  "LANNEA", "MONOTES", "OCHNA", "PROTEA", "ZANTOXYLUM",
+  "PTEROCARPUS", "STRYCHNOS", "TREMA", "BOBGUNNIA", "VITEX"
 ]
 
 type FilterType = 'all' | 'no-table' | 'single' | 'couple' | 'validated' | 'not-validated' | 'all-tables' | string
@@ -383,7 +390,7 @@ export default function AdminDashboard() {
 
   // Copier le lien de partage
   const copyShareLink = (id: string, isCouple: boolean, signature: string) => {
-    const link = `${window.location.origin}/qr-form?id=${id}&couple=${isCouple}&sig=${signature}`
+    const link = `${window.location.origin}/invitation?id=${id}&couple=${isCouple}&sig=${signature}`
     navigator.clipboard.writeText(link)
     setCopiedId(id)
     setTimeout(() => setCopiedId(null), 2000)
@@ -462,7 +469,7 @@ export default function AdminDashboard() {
 
   // Ouvrir le lien
   const openLink = (id: string, isCouple: boolean, signature: string) => {
-    const link = `${window.location.origin}/qr-form?id=${id}&couple=${isCouple}&sig=${signature}`
+    const link = `${window.location.origin}/invitation?id=${id}&couple=${isCouple}&sig=${signature}`
     window.open(link, '_blank', 'noopener,noreferrer')
   }
 
