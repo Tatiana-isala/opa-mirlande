@@ -1201,7 +1201,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
             <p className="text-gray-600 text-lg">À la Commune LUBUMBASHI</p>
           </div>
 
-          <div className="date-item">
+          <div className="date-item hidden">
             <div className="flex items-center justify-center gap-2">
               <img src="/rings.png" className='size-7 rotate-2' loading="lazy" />
               <p className="text-gray-600 serif text-2xl my-2"> À 13h00</p>
