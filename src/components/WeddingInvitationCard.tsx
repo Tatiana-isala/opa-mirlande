@@ -1194,7 +1194,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           <div className="date-item">
             <div className="flex items-center justify-center gap-2">
               <img src="/certificate.png" className='size-7 rotate-2' loading="lazy" />
-              <p className="text-gray-600 serif text-2xl my-2"> À 8h00</p>
+              <p className="text-gray-600 serif text-2xl my-2"> À 10h00</p>
             </div>
             <FaArrowDown size={12} className='block c mx-auto animate-bounce text-blue-400' />
             <p className="text-gray-600 text-xl">Mariage Civil</p>
@@ -1233,10 +1233,8 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
         />
    <h2 className='my-3 text-2xl ocean text font-bold text-blue-900'>Entree Rapide</h2>
             <p className="text-gray-600 my- text-lg">
-                    
-                Un code QR s'affichera ci-dessous 24 heures avant le jour du mariage . Vous allez le présenter à l'entrée de la salle de réception.
-                    
-                    </p>
+              Votre code QR sera bientôt disponible.
+            </p>
 
 
         {/* QR Code Section */}
