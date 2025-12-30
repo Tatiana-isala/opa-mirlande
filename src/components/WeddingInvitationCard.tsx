@@ -648,7 +648,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { QRCodeSVG } from 'qrcode.react'
 import { FiAlertTriangle } from 'react-icons/fi'
-import { FaArrowDown } from 'react-icons/fa'
+import { FaArrowDown, FaExclamationCircle } from 'react-icons/fa'
 import { Heart } from 'lucide-react'
 import Head from 'next/head'
 import { gsap } from 'gsap'
@@ -1041,7 +1041,7 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           src="/assets/flya.webp" 
           alt="Bottom Right Flower" 
           loading="lazy" 
-          className="absolute bottom-[290px] right-0 w-[113px] " 
+          className="absolute bottom-[290px] right-[-23px] w-[83px] " 
         />
        
 
@@ -1231,18 +1231,23 @@ export const WeddingInvitationCard = ({ qrData }: { qrData: QRData }) => {
           loading="lazy" 
           className="0 right-0 w-[103px] mx-auto " 
         />
-   <h2 className='my-3 text-2xl ocean text font-bold text-blue-900'>Entree Rapide</h2>
-            <p className="text-gray-600 my- text-lg">
-              Votre code QR sera bientôt disponible.
+   <h2 className='my-3 text-2xl ocean text font-bold text-blue-900'>Entrée Rapide</h2>
+            <p className="text-red-600 my- text-sm flex justify-center items-center px-4 flex-col  ">
+              <FaExclamationCircle className='w-4 h-4 text-red-500 block flex-shrink-0'/>
+              <span>
+
+
+           Code QR personnel et unique. À présenter à l’entrée pour un accès rapide. Pensez à en conserver une capture d’écran par précaution.
+              </span>
             </p>
 
 
         {/* QR Code Section */}
         <div  className="mt-9 mb-8 relative">
-          <div className={`mx-auto p-2 blur-xl border-4 rounded-xl w-max relative`}>
+          <div className={`mx-auto p-2  border rounded-xl w-max relative`}>
             <QRCodeSVG
               value={JSON.stringify(qrContent)}
-              size={180}
+              size={280}
               level="H"
               includeMargin={true}
               fgColor="#000"
